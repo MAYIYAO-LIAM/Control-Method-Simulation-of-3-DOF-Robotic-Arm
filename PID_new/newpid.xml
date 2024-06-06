@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/18/24||21:05:06" using="Simscape Multibody Link Version 7.4" from="SolidWorks 32.0.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="ARM" uid="ARM" version="117">
+<AssemblyFile name="ARM.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="link2.stp-1" uid="link2.stp-1" entityUid="link2.stp*:*默认">
+<Transform>
+<Rotation>-0.1333216806684932 -0.0091015893800413441 0.99103102400201648 0.991072817437613 -0.0012243693617174647 0.13331605850735972 0 0.99995783010606165 0.0091835728111010137</Rotation>
+<Translation>0 0 0.073437500000000003</Translation>
+</Transform>
+</Instance>
+<Instance name="link0.stp-1" uid="link0.stp-1" grounded="true" entityUid="link0.stp*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="link1.stp-1" uid="link1.stp-1" entityUid="link1.stp*:*默认">
+<Transform>
+<Rotation>-0.13332168066849284 -0.99107281743761311 0 0.99107281743761311 -0.13332168066849284 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="link3.stp-1" uid="link3.stp-1" entityUid="link3.stp*:*默认">
+<Transform>
+<Rotation>-0.1333216806684934 0.99097146457447904 -0.01417342099989573 0.991072817437613 0.13330804641900554 -0.0019066452790156968 0 -0.014301089436133113 -0.999897734191322</Rotation>
+<Translation>0.24609123499214797 0.045717424844810096 0.075733393202775251</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="同心1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link0.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0.014999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link1.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0.069523710027000002</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link0.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link1.stp-1</Uid>
+</InstancePath>
+<Position>-0.019999999999999997 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link1.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0.073437500000000003</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link2.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link1.stp-1</Uid>
+</InstancePath>
+<Position>-0.012500000000000002 0 0.12</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link2.stp-1</Uid>
+</InstancePath>
+<Position>-0.012499999999999999 0 0</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link2.stp-1</Uid>
+</InstancePath>
+<Position>0.005000000000000001 0 0.25</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>link3.stp-1</Uid>
+</InstancePath>
+<Position>-0.0074999999999999989 0 0</Position>
+<Axis>1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link2.stp-1</Uid>
+</InstancePath>
+<Position>0.012499999999999999 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>link3.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="link0.stp" uid="link0.stp*:*默认" version="111">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="link0.stp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.63769911184307748</Mass>
+<CenterOfMass>0 0 -0.0085220650639562801</CenterOfMass>
+<Inertia>0.0011737663686131944 0.0020487663686131947 0.0031325398223686161 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="link0.stp_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="link1.stp" uid="link1.stp*:*默认" version="111">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="link1.stp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.35860380842039224</Mass>
+<CenterOfMass>3.4708195142320755e-09 -6.7556440925220591e-12 0.035704347325145415</CenterOfMass>
+<Inertia>0.00040306258379546622 0.00044544215127068656 0.00039221807910087717 8.007977670426229e-12 -1.8641119458515199e-11 -1.2049358107129341e-10</Inertia>
+</MassProperties>
+<GeometryFile name="link1.stp_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="link2.stp" uid="link2.stp*:*默认" version="111">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="link2.stp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.41832879929919531</Mass>
+<CenterOfMass>-0.00012672896563215363 0 0.10828398218460863</CenterOfMass>
+<Inertia>0.0030547894949519636 0.0029676518783935332 0.00013433960592174605 0 7.5129862578440797e-06 0</Inertia>
+</MassProperties>
+<GeometryFile name="link2.stp_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="link3.stp" uid="link3.stp*:*默认" version="111">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="link3.stp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.30868160098056913</Mass>
+<CenterOfMass>0.0093988890759116647 0.14423038307784319 2.5028022185982233e-05</CenterOfMass>
+<Inertia>0.0033595698332293568 6.1728271798992238e-05 0.0033320843992854284 -1.3913541857430208e-06 -4.6504060094745712e-09 -2.6761788409564061e-05</Inertia>
+</MassProperties>
+<GeometryFile name="link3.stp_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
